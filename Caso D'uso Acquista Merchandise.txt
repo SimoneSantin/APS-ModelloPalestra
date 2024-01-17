@@ -1,0 +1,37 @@
+Nome del Caso d’Uso: Acquista Merchandise
+Portata: Sistema Palestra
+Livello: Obbiettivo Utente
+Attore Primario: Utente
+Parti Interessate e Interessi:
+	-Utente: vuole acquistare nuovi prodotti relativi al merchandise della palestra
+	-Palestra: vuole fidelizzare i clienti garantendogli uno sconto e attrarne di nuovi grazie a una nuova attività di merchandising
+	-Cliente Fedele: vuole acquistare nuovi prodotti della palestra a cui è iscritto sfruttando gli sconti in suo possesso
+	-Cliente VIP: vuole acquistare nuovi prodotti della palestra a cui è iscritto sfruttando gli sconti in suo possesso
+Pre-condizioni: Deve essere presente almeno un prodotto
+Garanzia di successo: L'utente riesce ad acquistare dei nuovi prodotti
+Scenario Principale di Successo:
+	1-L'utente si collega al sistema della palestra
+	2-L'utente seleziona "consulta catalogo"
+	3-Il sistema stampa tutti i servizi, le offerte e i prodotti della palestra
+	4-L'utente filtra i risultati selezionando "visualizza merchandise"
+	5-Il sistema stampa tutti i prodotti relativi al merchandise della palestra
+	6-L'utente seleziona un prodotto e lo aggiunge all'ordine
+	L'utente ripete il passo 6 finche non effettua il checkout
+	7-L'utente seleziona "effettua checkout" 
+	8-L'utente inserisce i dati relativi alla consegna
+	9-L'utente inserisce i dati per il pagamento
+	10-L'utente conferma il pagamento
+	11-Il sistema conferma il pagamento e l'avvenuto acquisto
+Estensioni:
+	6a)Il prodotto è terminato
+	  6a.1)Il sistema avverte l'utente che il prodotto scelto è momentaneamente terminato
+	  6a.2)Il sistema annulla l'operazione
+        7a)L'utente è un cliente fedele o VIP e ha diritto quindi a uno sconto
+	  7a.1)Il sistema applica uno sconto all'ordine del cliente
+	11a)Il pagamento non va a buon fine
+	   11a.1)Il sistema notifica la non riuscita del pagamento
+	   11a.2)Il sistema annulla l'operazione
+Requisiti speciali: Il sistema dovra confermare il pagamento entro 5 secondi
+Elenco delle variabili tecnologiche e dei dati: -
+Frequenza di ripetizione: Possibile ogni volta che si consulta il catalogo
+varie: -

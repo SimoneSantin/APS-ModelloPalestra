@@ -1,0 +1,36 @@
+﻿IscrivitiEventoSpeciale
+
+Nome del Caso d’Uso: IscrivitiEventoSpeciale
+Portata: Sistema Palestra
+Livello: Obbiettivo Utente
+Attore Primario: Cliente Fedele
+Parti Interessate e Interessi:
+	-Cliente Fedele: vuole prenotare e partecipare ad un evento desiderato
+	-Palestra: vuole che il cliente fedele possa prenotare facilmente gli eventi desiderati
+Pre-condizioni: Deve essere presente almeno un evento
+Garanzia di successo: Viene aggiunta l'iscrizone del cliente fedele all'evento selezionato
+Scenario Principale di Successo:
+	1-Il cliente fedele si collega al sistema della palestra
+	2-Il cliente fedele effettua il login
+	3-Il cliente fedele seleziona "Iscriviti evento speciale"
+	4-Il sistema stampa la lista degli eventi disponibili
+	5-Il cliente fedele sceglie l'evento da prenotare desiderato
+	6-Il sistema stampa i dettegli dell' evento selezionato
+	7-Il cliente fedele seleziona "effettua iscrizione"
+	8-Il cliente fedele inserisce i dati del pagamento
+	9-Il cliente fedele conferma il pagamento
+	10-Il sistema conferma la riuscita dell'iscrizione
+Estensioni:
+	7a-Il cliente fedele non ha un abbonamento valido
+		7a.1-Il sistema avverte il cliente fedele che non può accedere alla palestra
+		7a.2-Il sistema annulla l'operazione
+	7b-Il cliente fedele è un cliente VIP
+		7b.1-Il cliente VIP non deve effettuare un pagamento. Si va al punto 9
+	9a-Pagamento non riusito
+		9a.1-Il sistema conferma il fallimento nell'iscrizione
+		9a.2-Il sistema annulla l'operazione
+Requisiti speciali: 
+	-24h prima dell'evento deve essere mandata una mail a tutti i partecipanti
+Elenco delle variabili tecnologiche e dei dati: -
+Frequenza di ripetizione: potenzialmente infinita
+varie: -

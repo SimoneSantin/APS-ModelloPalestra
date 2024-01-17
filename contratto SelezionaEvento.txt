@@ -1,0 +1,8 @@
+﻿contratto SelezionaEvento
+
+Operazione: selezionaEvento(e : EventoSpeciale, cf : ClienteFedele)
+Riferimenti caso d’uso: IscrivitiEventoSpeciale
+Precondizioni: è in corso l’iscrizione del ClienteFedele cf all'EventoSpeciale e.
+post-condizioni:
+	-e.maxposti è diventato e.maxposti - 1
+	-L'EventoSpeciale e è stato associato con il ClienteFedele cf

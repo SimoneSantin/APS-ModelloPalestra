@@ -1,0 +1,5 @@
+Operazione effettuaCheckout(Ordine o)
+Rif. caso d’uso AcquistaMerchandise
+Precondizioni - È in corso la modifica di un Ordine o
+Postcondizioni: 
+	-o.saldo è stato aggiornato sulla base del valore complessivo dei Prodotti p nell'ordine e dello sconto del ClienteFedele o ClienteVip 
